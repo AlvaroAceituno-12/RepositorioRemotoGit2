@@ -1,13 +1,28 @@
 package Principal;
-
+import java.util.Scanner;
 public class Principal {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Holaaaaa, estamos en Rama2");
-		System.out.println("Que pasa su colega, estamos en Rama2");
-		
-
+		Scanner sc = new Scanner(System.in);
+        System.out.print("Introduce un numero: ");
+        int numero = sc.nextInt();
+        if (numero > 0) {
+            int a = 0;
+            while (a <= numero) {
+                System.out.println(a);
+                a++;
+            }
+        } else {
+            if (numero < 0) {
+                int a = 0;
+                while (a >= numero) {
+                    System.out.println(a);
+                    a--;
+                }
+            }else {
+                System.out.println("Has introducido el numero 0");
+            }
+        }
 	}
-
 }
